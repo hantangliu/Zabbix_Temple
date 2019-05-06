@@ -728,12 +728,12 @@
                     <valuemap/>
                 </item>
                 <item>
-                    <name>MongoDB Port Status(28018)</name>
+                    <name>MongoDB Port Status(27017)</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>net.tcp.port[,28018]</key>
+                    <key>net.tcp.port[,27017]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -2264,8 +2264,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template MongoDB:net.tcp.port[,28018].last()}=0</expression>
-            <name>MongoDB Port(28018) Is Down</name>
+            <expression>{Template MongoDB:net.tcp.port[,27017].last()}=0</expression>
+            <name>MongoDB Port(27017) Is Down</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
